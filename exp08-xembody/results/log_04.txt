@@ -1,0 +1,8 @@
+pybullet build time: Nov 21 2026 21:40:03
+60 KUKA demos (3669 state-action pairs) from 60 attempts
+{'robot': 'kuka_iiwa', 'expert': 1.0, 'bc_agnostic': 1.0, 'bc_proprio': 1.0}
+{'robot': 'franka_panda', 'expert': 1.0, 'bc_agnostic': 1.0, 'bc_proprio': 0.0}
+{'robot': 'xarm6', 'expert': 1.0, 'bc_agnostic': 1.0, 'bc_proprio': 0.0}
+{'robot': 'kuka_mini', 'expert': 0.33, 'bc_agnostic': 0.4, 'bc_proprio': 0.03}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\04_learn_once.csv
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\04_learn_once_deploy_many.png

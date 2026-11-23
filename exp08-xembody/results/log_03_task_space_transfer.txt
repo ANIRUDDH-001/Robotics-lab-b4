@@ -1,0 +1,6 @@
+{'robot': 'kuka_iiwa', 'success_rate': 1.0, 'mean_steps_success': 54.9, 'median_err_cm': 0.0}
+{'robot': 'franka_panda', 'success_rate': 1.0, 'mean_steps_success': 46.8, 'median_err_cm': 0.0}
+{'robot': 'xarm6', 'success_rate': 1.0, 'mean_steps_success': 39.9, 'median_err_cm': 0.1}
+{'robot': 'kuka_mini', 'success_rate': 0.33, 'mean_steps_success': 42.5, 'median_err_cm': 11.6}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\03_task_space.csv
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\03_task_space_paths.png

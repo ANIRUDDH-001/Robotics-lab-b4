@@ -1,0 +1,5 @@
+Running pioneer for 180 s with ['k_turn=0.5'] ...
+Trajectory: analysis\runs\pioneer_kturn0.5_r2.csv
+robot       path m  mean m/s  stuck %
+pioneer      74.34     0.414      0.0
+coverage: 28% of 16x16 grid (50 cm cells)

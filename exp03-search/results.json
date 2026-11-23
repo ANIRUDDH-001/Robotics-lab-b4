@@ -1,0 +1,28 @@
+{
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2"
+  },
+  "maze": {
+    "rows": 23,
+    "cols": 35,
+    "open_cells": 387
+  },
+  "bfs": {
+    "expanded": 282,
+    "path_cells": 53,
+    "path_steps": 52,
+    "valid": true,
+    "max_frontier": 11,
+    "mean_frontier": 7.379432624113475
+  },
+  "dfs": {
+    "expanded": 99,
+    "path_cells": 91,
+    "path_steps": 90,
+    "valid": true,
+    "max_frontier": 12,
+    "mean_frontier": 6.474747474747475
+  }
+}

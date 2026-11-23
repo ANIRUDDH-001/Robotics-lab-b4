@@ -1,0 +1,37 @@
+diff --git a/tools/run_experiment.py b/tools/run_experiment.py
+index 90bd830..189b34c 100644
+--- a/tools/run_experiment.py
++++ b/tools/run_experiment.py
+@@ -58,6 +58,8 @@ def main():
+     ap.add_argument("--seconds", type=float, default=120, help="simulated seconds to run")
+     ap.add_argument("--set", nargs="*", default=[], metavar="NAME=VALUE", help="controller parameters")
+     ap.add_argument("--name", default=None, help="label for the output CSV")
++    ap.add_argument("--replace", nargs="*", default=[], metavar="OLD|NEW",
++                    help="text substitutions applied to the world file (for GUIDE.md section 9/10 exercises)")
+     a = ap.parse_args()
+ 
+     wfile, ctrl = WORLDS[a.world]
+@@ -66,12 +68,20 @@ def main():
+     out = os.path.join(ROOT, "analysis", "runs", label + ".csv")
+ 
+     src = open(os.path.join(ROOT, "worlds", wfile)).read()
++    for rep in a.replace:
++        old, _, new = rep.partition("|")
++        if old not in src:
++            sys.exit(f"--replace: text not found in world: {old!r}")
++        src = src.replace(old, new)
+     robot_args = " ".join(f'"--{s}"' for s in a.set)
+     src = src.replace(f'controller "{ctrl}"', f'controller "{ctrl}" controllerArgs [ {robot_args} ]')
+-    log_args = f'"--seconds={a.seconds}" "--out={out}" "--quit=1"'
++    # Windows fix: use forward slashes and a function replacement so that a
++    # path such as C:\Users\... is not read as regex escapes (\U, \L).
++    out_posix = out.replace("\\", "/")
++    log_args = f'"--seconds={a.seconds}" "--out={out_posix}" "--quit=1"'
+     src = re.sub(r'controller "trajectory_logger"(\s*controllerArgs \[[^\]]*\])?',
+-                 f'controller "trajectory_logger" controllerArgs [ {log_args} ]', src)
+-    tmp = os.path.join(ROOT, "worlds", f"_experiment_{a.world}.wbt")
++                 lambda _m: f'controller "trajectory_logger" controllerArgs [ {log_args} ]', src)
++    tmp = os.path.join(ROOT, "worlds", f"_experiment_{label}.wbt")
+     with open(tmp, "w") as f:
+         f.write(src)
+ 

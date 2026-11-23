@@ -1,0 +1,8 @@
+pybullet build time: Nov 21 2026 21:40:03
+{'dart_sigma_mm': 0.0, 'demos': 60, 'pairs': 3310, 'kuka_iiwa': 1.0, 'xarm6': 1.0}
+{'dart_sigma_mm': 2.0, 'demos': 60, 'pairs': 3384, 'kuka_iiwa': 1.0, 'xarm6': 1.0}
+{'dart_sigma_mm': 5.0, 'demos': 60, 'pairs': 3669, 'kuka_iiwa': 1.0, 'xarm6': 1.0}
+{'dart_sigma_mm': 10.0, 'demos': 60, 'pairs': 4872, 'kuka_iiwa': 0.0, 'xarm6': 0.0}
+{'dart_sigma_mm': 20.0, 'demos': 60, 'pairs': 7600, 'kuka_iiwa': 0.0, 'xarm6': 0.0}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\ex1_dart_noise.csv
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\ex1_dart_noise.png

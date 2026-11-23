@@ -1,0 +1,6 @@
+{'robot': 'kuka_iiwa', 'success_rate': 1.0, 'mean_path_dev_cm': 0.0, 'median_err_cm': 0.0}
+{'robot': 'franka_panda', 'success_rate': 0.0, 'mean_path_dev_cm': 19.5, 'median_err_cm': 25.7}
+{'robot': 'xarm6', 'success_rate': 0.0, 'mean_path_dev_cm': 58.8, 'median_err_cm': 25.7}
+{'robot': 'kuka_mini', 'success_rate': 0.0, 'mean_path_dev_cm': 21.8, 'median_err_cm': 25.7}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\02_joint_space.csv
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\02_joint_space_paths.png

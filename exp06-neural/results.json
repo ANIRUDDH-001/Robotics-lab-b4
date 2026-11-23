@@ -1,0 +1,80 @@
+{
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2"
+  },
+  "setup": {
+    "shape": "2-4-1",
+    "activation": "sigmoid (hidden and output)",
+    "loss": "mean squared error",
+    "seed": 1,
+    "epochs": 20000,
+    "init": "N(0,1) weights, zero biases"
+  },
+  "lr": [
+    {
+      "lr": 0.05,
+      "initial_mse": 0.2748629616482994,
+      "final_mse": 0.002314868988271694,
+      "epoch_half_loss": 6313,
+      "converged": false,
+      "predictions": [
+        0.039,
+        0.953,
+        0.954,
+        0.058
+      ]
+    },
+    {
+      "lr": 0.5,
+      "initial_mse": 0.2748629616482994,
+      "final_mse": 0.00011144618732742166,
+      "epoch_half_loss": 633,
+      "converged": true,
+      "predictions": [
+        0.008,
+        0.989,
+        0.991,
+        0.013
+      ]
+    },
+    {
+      "lr": 2.0,
+      "initial_mse": 0.2748629616482994,
+      "final_mse": 2.4552864803967287e-05,
+      "epoch_half_loss": 159,
+      "converged": true,
+      "predictions": [
+        0.004,
+        0.995,
+        0.996,
+        0.006
+      ]
+    },
+    {
+      "lr": 10.0,
+      "initial_mse": 0.2748629616482994,
+      "final_mse": 5.807149088053469e-06,
+      "epoch_half_loss": 53,
+      "converged": true,
+      "predictions": [
+        0.002,
+        0.998,
+        0.998,
+        0.003
+      ]
+    }
+  ],
+  "zero_init": {
+    "final_mse": 0.25,
+    "hidden_units_identical": true,
+    "predictions": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "best_lr": 10.0
+}

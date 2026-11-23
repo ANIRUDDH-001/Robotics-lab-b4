@@ -1,0 +1,109 @@
+{
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2"
+  },
+  "params": {
+    "grid": [
+      5,
+      7
+    ],
+    "walls": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "goal": [
+      0,
+      6
+    ],
+    "pit": [
+      2,
+      6
+    ],
+    "start": [
+      4,
+      0
+    ],
+    "rewards": {
+      "goal": 10.0,
+      "pit": -10.0,
+      "step": -0.1
+    },
+    "alpha": 0.5,
+    "gamma": 0.95,
+    "episodes": 600,
+    "step_cap": 120,
+    "seed": 613,
+    "optimal_steps": 10,
+    "optimal_return": 9.1
+  },
+  "eps": [
+    {
+      "eps": 0.01,
+      "mean_last100": 9.093,
+      "std_last100": 0.043023249528597915,
+      "first_goal_episode": 3,
+      "greedy_steps": 10,
+      "greedy_return": 9.1,
+      "greedy_reaches_goal": true,
+      "greedy_optimal": true
+    },
+    {
+      "eps": 0.1,
+      "mean_last100": 8.415999999999999,
+      "std_last100": 3.3698284822821467,
+      "first_goal_episode": 3,
+      "greedy_steps": 10,
+      "greedy_return": 9.1,
+      "greedy_reaches_goal": true,
+      "greedy_optimal": true
+    },
+    {
+      "eps": 0.2,
+      "mean_last100": 7.29,
+      "std_last100": 5.345923680712248,
+      "first_goal_episode": 2,
+      "greedy_steps": 10,
+      "greedy_return": 9.1,
+      "greedy_reaches_goal": true,
+      "greedy_optimal": true
+    },
+    {
+      "eps": 0.5,
+      "mean_last100": 7.8420000000000005,
+      "std_last100": 2.1252849220751555,
+      "first_goal_episode": 4,
+      "greedy_steps": 10,
+      "greedy_return": 9.1,
+      "greedy_reaches_goal": true,
+      "greedy_optimal": true
+    }
+  ],
+  "policy_grid": [
+    "\u2192 \u2192 \u2192 \u2192 \u2192 \u2192 G",
+    "\u2190 \u2191 # \u2191 # \u2191 \u2191",
+    "\u2192 \u2191 # \u2191 # \u2191 P",
+    "\u2192 \u2193 # \u2192 \u2192 \u2191 \u2190",
+    "\u2192 \u2192 \u2192 \u2192 \u2192 \u2191 \u2191"
+  ],
+  "policy_eps": 0.2
+}

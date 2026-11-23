@@ -1,0 +1,72 @@
+{
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2"
+  },
+  "landscape": {
+    "local_maxima_x": [
+      0.52,
+      1.465,
+      2.765,
+      5.275,
+      7.65,
+      8.855,
+      9.945
+    ],
+    "local_maxima_f": [
+      0.25,
+      0.258,
+      1.023,
+      0.09,
+      1.55,
+      -0.445,
+      -0.973
+    ],
+    "global_x": 7.65,
+    "global_f": 1.55,
+    "starts": 25,
+    "starts_reaching_global": 6
+  },
+  "plain": {
+    "trials": 500,
+    "successes": 68,
+    "p": 0.136,
+    "se": 0.01532997064576446,
+    "p_first200": 0.125,
+    "p_second200": 0.155
+  },
+  "restarts": [
+    {
+      "k": 1,
+      "trials": 200,
+      "measured": 0.145,
+      "predicted": 0.136
+    },
+    {
+      "k": 2,
+      "trials": 200,
+      "measured": 0.255,
+      "predicted": 0.25350400000000006
+    },
+    {
+      "k": 5,
+      "trials": 200,
+      "measured": 0.56,
+      "predicted": 0.518530575794176
+    },
+    {
+      "k": 10,
+      "trials": 200,
+      "measured": 0.78,
+      "predicted": 0.7681871935549123
+    },
+    {
+      "k": 20,
+      "trials": 200,
+      "measured": 0.975,
+      "predicted": 0.9462628227680523
+    }
+  ],
+  "k_for_99": 31.50288075076842
+}

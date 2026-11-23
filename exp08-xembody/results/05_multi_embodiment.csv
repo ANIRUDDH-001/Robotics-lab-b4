@@ -1,0 +1,4 @@
+unseen,single_source,multi_sources,single_agnostic,multi_agnostic,single_proprio,multi_proprio
+kuka_iiwa,franka_panda,franka_panda+xarm6+kuka_mini,1.0,1.0,0.0,1.0
+franka_panda,kuka_iiwa,kuka_iiwa+xarm6+kuka_mini,1.0,1.0,0.0,0.0
+xarm6,kuka_iiwa,kuka_iiwa+franka_panda+kuka_mini,1.0,1.0,0.0,0.0

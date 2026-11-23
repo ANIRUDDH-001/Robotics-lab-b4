@@ -1,0 +1,8 @@
+desktop.ini
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.ruff_cache/
+.venv/
+venv/
+_experiment_*.wbt

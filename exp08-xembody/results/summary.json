@@ -1,0 +1,241 @@
+{
+  "part1": [
+    {
+      "robot": "kuka_iiwa",
+      "dof": 7,
+      "max_reach_m": 1.259,
+      "task_coverage_pct": 100.0
+    },
+    {
+      "robot": "franka_panda",
+      "dof": 7,
+      "max_reach_m": 1.275,
+      "task_coverage_pct": 100.0
+    },
+    {
+      "robot": "xarm6",
+      "dof": 6,
+      "max_reach_m": 1.029,
+      "task_coverage_pct": 100.0
+    },
+    {
+      "robot": "kuka_mini",
+      "dof": 7,
+      "max_reach_m": 0.756,
+      "task_coverage_pct": 67.5
+    }
+  ],
+  "part2": [
+    {
+      "robot": "kuka_iiwa",
+      "success_rate": 1.0,
+      "mean_path_dev_cm": 0.0,
+      "median_err_cm": 0.0
+    },
+    {
+      "robot": "franka_panda",
+      "success_rate": 0.0,
+      "mean_path_dev_cm": 19.5,
+      "median_err_cm": 25.7
+    },
+    {
+      "robot": "xarm6",
+      "success_rate": 0.0,
+      "mean_path_dev_cm": 58.8,
+      "median_err_cm": 25.7
+    },
+    {
+      "robot": "kuka_mini",
+      "success_rate": 0.0,
+      "mean_path_dev_cm": 21.8,
+      "median_err_cm": 25.7
+    }
+  ],
+  "part3": [
+    {
+      "robot": "kuka_iiwa",
+      "success_rate": 1.0,
+      "mean_steps_success": 54.9,
+      "median_err_cm": 0.0
+    },
+    {
+      "robot": "franka_panda",
+      "success_rate": 1.0,
+      "mean_steps_success": 46.8,
+      "median_err_cm": 0.0
+    },
+    {
+      "robot": "xarm6",
+      "success_rate": 1.0,
+      "mean_steps_success": 39.9,
+      "median_err_cm": 0.1
+    },
+    {
+      "robot": "kuka_mini",
+      "success_rate": 0.33,
+      "mean_steps_success": 42.5,
+      "median_err_cm": 11.6
+    }
+  ],
+  "part4": {
+    "demos": 60,
+    "pairs": 3669,
+    "dart_sigma_m": 0.005,
+    "rows": [
+      {
+        "robot": "kuka_iiwa",
+        "expert": 1.0,
+        "bc_agnostic": 1.0,
+        "bc_proprio": 1.0
+      },
+      {
+        "robot": "franka_panda",
+        "expert": 1.0,
+        "bc_agnostic": 1.0,
+        "bc_proprio": 0.0
+      },
+      {
+        "robot": "xarm6",
+        "expert": 1.0,
+        "bc_agnostic": 1.0,
+        "bc_proprio": 0.0
+      },
+      {
+        "robot": "kuka_mini",
+        "expert": 0.33,
+        "bc_agnostic": 0.4,
+        "bc_proprio": 0.03
+      }
+    ],
+    "final_train_mse": {
+      "agnostic": 0.018028584223763248,
+      "proprio": 0.017522222304769068
+    }
+  },
+  "part5": [
+    {
+      "unseen": "kuka_iiwa",
+      "single_source": "franka_panda",
+      "multi_sources": "franka_panda+xarm6+kuka_mini",
+      "single_agnostic": 1.0,
+      "multi_agnostic": 1.0,
+      "single_proprio": 0.0,
+      "multi_proprio": 1.0
+    },
+    {
+      "unseen": "franka_panda",
+      "single_source": "kuka_iiwa",
+      "multi_sources": "kuka_iiwa+xarm6+kuka_mini",
+      "single_agnostic": 1.0,
+      "multi_agnostic": 1.0,
+      "single_proprio": 0.0,
+      "multi_proprio": 0.0
+    },
+    {
+      "unseen": "xarm6",
+      "single_source": "kuka_iiwa",
+      "multi_sources": "kuka_iiwa+franka_panda+kuka_mini",
+      "single_agnostic": 1.0,
+      "multi_agnostic": 1.0,
+      "single_proprio": 0.0,
+      "multi_proprio": 0.0
+    }
+  ],
+  "exercise2": {
+    "scale": [
+      {
+        "scale": 0.5,
+        "success_rate": 0.0,
+        "median_err_cm": 25.7
+      },
+      {
+        "scale": 0.6,
+        "success_rate": 0.33,
+        "median_err_cm": 11.6
+      },
+      {
+        "scale": 0.7,
+        "success_rate": 0.97,
+        "median_err_cm": 0.2
+      },
+      {
+        "scale": 0.8,
+        "success_rate": 1.0,
+        "median_err_cm": 0.1
+      },
+      {
+        "scale": 0.9,
+        "success_rate": 1.0,
+        "median_err_cm": 0.0
+      },
+      {
+        "scale": 1.0,
+        "success_rate": 1.0,
+        "median_err_cm": 0.0
+      }
+    ],
+    "rest_pose": [
+      {
+        "robot": "kuka_iiwa",
+        "rest_pose": true,
+        "success_rate": 1.0,
+        "mean_steps_success": 54.9
+      },
+      {
+        "robot": "kuka_iiwa",
+        "rest_pose": false,
+        "success_rate": 1.0,
+        "mean_steps_success": 54.9
+      },
+      {
+        "robot": "franka_panda",
+        "rest_pose": true,
+        "success_rate": 1.0,
+        "mean_steps_success": 46.8
+      },
+      {
+        "robot": "franka_panda",
+        "rest_pose": false,
+        "success_rate": 1.0,
+        "mean_steps_success": 45.9
+      }
+    ]
+  },
+  "exercise1": [
+    {
+      "dart_sigma_mm": 0.0,
+      "demos": 60,
+      "pairs": 3310,
+      "kuka_iiwa": 1.0,
+      "xarm6": 1.0
+    },
+    {
+      "dart_sigma_mm": 2.0,
+      "demos": 60,
+      "pairs": 3384,
+      "kuka_iiwa": 1.0,
+      "xarm6": 1.0
+    },
+    {
+      "dart_sigma_mm": 5.0,
+      "demos": 60,
+      "pairs": 3669,
+      "kuka_iiwa": 1.0,
+      "xarm6": 1.0
+    },
+    {
+      "dart_sigma_mm": 10.0,
+      "demos": 60,
+      "pairs": 4872,
+      "kuka_iiwa": 0.0,
+      "xarm6": 0.0
+    },
+    {
+      "dart_sigma_mm": 20.0,
+      "demos": 60,
+      "pairs": 7600,
+      "kuka_iiwa": 0.0,
+      "xarm6": 0.0
+    }
+  ]
+}

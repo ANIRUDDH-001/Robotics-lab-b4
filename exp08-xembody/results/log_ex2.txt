@@ -1,0 +1,13 @@
+pybullet build time: Nov 21 2026 21:40:03
+{'scale': 0.5, 'success_rate': 0.0, 'median_err_cm': 25.7}
+{'scale': 0.6, 'success_rate': 0.33, 'median_err_cm': 11.6}
+{'scale': 0.7, 'success_rate': 0.97, 'median_err_cm': 0.2}
+{'scale': 0.8, 'success_rate': 1.0, 'median_err_cm': 0.1}
+{'scale': 0.9, 'success_rate': 1.0, 'median_err_cm': 0.0}
+{'scale': 1.0, 'success_rate': 1.0, 'median_err_cm': 0.0}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\ex2_scale_sweep.csv
+{'robot': 'kuka_iiwa', 'rest_pose': True, 'success_rate': 1.0, 'mean_steps_success': 54.9}
+{'robot': 'kuka_iiwa', 'rest_pose': False, 'success_rate': 1.0, 'mean_steps_success': 54.9}
+{'robot': 'franka_panda', 'rest_pose': True, 'success_rate': 1.0, 'mean_steps_success': 46.8}
+{'robot': 'franka_panda', 'rest_pose': False, 'success_rate': 1.0, 'mean_steps_success': 45.9}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\ex2_scale_sweep.png

@@ -1,0 +1,12 @@
+pybullet build time: Nov 21 2026 21:40:03
+  demos franka_panda: 60 successes from 60 tries
+  demos franka_panda: 20 successes from 20 tries
+  demos xarm6: 20 successes from 20 tries
+  demos kuka_mini: 20 successes from 41 tries
+{'unseen': 'kuka_iiwa', 'single_source': 'franka_panda', 'multi_sources': 'franka_panda+xarm6+kuka_mini', 'single_agnostic': 1.0, 'multi_agnostic': 1.0, 'single_proprio': 0.0, 'multi_proprio': 1.0}
+  demos kuka_iiwa: 60 successes from 60 tries
+  demos kuka_iiwa: 20 successes from 20 tries
+{'unseen': 'franka_panda', 'single_source': 'kuka_iiwa', 'multi_sources': 'kuka_iiwa+xarm6+kuka_mini', 'single_agnostic': 1.0, 'multi_agnostic': 1.0, 'single_proprio': 0.0, 'multi_proprio': 0.0}
+{'unseen': 'xarm6', 'single_source': 'kuka_iiwa', 'multi_sources': 'kuka_iiwa+franka_panda+kuka_mini', 'single_agnostic': 1.0, 'multi_agnostic': 1.0, 'single_proprio': 0.0, 'multi_proprio': 0.0}
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\05_multi_embodiment.csv
+wrote D:\LMS\SEM 7\robotics lab\Robotics-lab-b4\exp08-xembody\results\05_multi_embodiment.png

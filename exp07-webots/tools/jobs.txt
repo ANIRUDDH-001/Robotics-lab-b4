@@ -1,0 +1,36 @@
+swarm --seconds 120 --name swarm_default_r1
+swarm --seconds 120 --name swarm_default_r2
+swarm --seconds 120 --name swarm_default_r3
+swarm --seconds 120 --set cruise=0.9 --name swarm_cruise0.9_r1
+swarm --seconds 120 --set cruise=0.9 --name swarm_cruise0.9_r2
+swarm --seconds 120 --set cruise=0.9 --name swarm_cruise0.9_r3
+pioneer --seconds 180 --name pioneer_default_r1
+pioneer --seconds 180 --name pioneer_default_r2
+pioneer --seconds 180 --name pioneer_default_r3
+pioneer --seconds 180 --set bubble=0.15 --name pioneer_bubble0.15_r1
+pioneer --seconds 180 --set bubble=0.15 --name pioneer_bubble0.15_r2
+pioneer --seconds 180 --set bubble=0.15 --name pioneer_bubble0.15_r3
+pioneer --seconds 180 --set k_turn=0.5 --name pioneer_kturn0.5_r1
+pioneer --seconds 180 --set k_turn=0.5 --name pioneer_kturn0.5_r2
+pioneer --seconds 180 --set k_turn=0.5 --name pioneer_kturn0.5_r3
+swarm --seconds 120 --set cruise=0.2 --name ex1_cruise0.2_r1
+swarm --seconds 120 --set cruise=0.2 --name ex1_cruise0.2_r2
+swarm --seconds 120 --set cruise=0.2 --name ex1_cruise0.2_r3
+swarm --seconds 120 --set cruise=0.4 --name ex1_cruise0.4_r1
+swarm --seconds 120 --set cruise=0.4 --name ex1_cruise0.4_r2
+swarm --seconds 120 --set cruise=0.4 --name ex1_cruise0.4_r3
+swarm --seconds 120 --set cruise=0.6 --name ex1_cruise0.6_r1
+swarm --seconds 120 --set cruise=0.6 --name ex1_cruise0.6_r2
+swarm --seconds 120 --set cruise=0.6 --name ex1_cruise0.6_r3
+swarm --seconds 120 --set cruise=0.8 --name ex1_cruise0.8_r1
+swarm --seconds 120 --set cruise=0.8 --name ex1_cruise0.8_r2
+swarm --seconds 120 --set cruise=0.8 --name ex1_cruise0.8_r3
+swarm --seconds 120 --set cruise=1.0 --name ex1_cruise1.0_r1
+swarm --seconds 120 --set cruise=1.0 --name ex1_cruise1.0_r2
+swarm --seconds 120 --set cruise=1.0 --name ex1_cruise1.0_r3
+pioneer --seconds 180 --replace "translation 0.136 0 0.059|translation 0.136 0 0.059 noise 0.001" --name ex5_noise0.001_r1
+pioneer --seconds 180 --replace "translation 0.136 0 0.059|translation 0.136 0 0.059 noise 0.001" --name ex5_noise0.001_r2
+pioneer --seconds 180 --replace "translation 0.136 0 0.059|translation 0.136 0 0.059 noise 0.001" --name ex5_noise0.001_r3
+pioneer --seconds 180 --replace "translation 0.136 0 0.059|translation 0.136 0 0.059 noise 0.003" --name ex5_noise0.003_r1
+pioneer --seconds 180 --replace "translation 0.136 0 0.059|translation 0.136 0 0.059 noise 0.003" --name ex5_noise0.003_r2
+pioneer --seconds 180 --replace "translation 0.136 0 0.059|translation 0.136 0 0.059 noise 0.003" --name ex5_noise0.003_r3
